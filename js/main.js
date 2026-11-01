@@ -11,6 +11,12 @@ console.log(paginaViajes);
 
 const arrayBanner = [
 
+//imagen: '../assets/banner/1.jpg',             parte en que defino:   qué foto es
+ // titulo: "banner 1",                         parte en que defino:   cómo se llama
+ // descripcion: "Descripcion de este banner",  parte en que defino:   su texto
+ // alt: 'el alt de este viaje',                parte en que defino:   lo que dice si la foto
+ //                                                                    no carga
+
            
         {imagen: '../assets/banner/1.jpg',
            titulo: "banner 1",
@@ -69,6 +75,12 @@ const arrayViajes = []
 // hago array de los destinos con sus fotos //
 
 const arrayDestinos = [
+
+//imagen: '../assets/viajes/viajes-7.jpg',      parte en que defino:  qué foto es
+ // titulo: "viaje 7",                          parte en que defino:  cómo se llama
+ // descripcion: "Descripcion de este viaje",   parte en que defino:  su texto
+ // alt: 'el alt de este viaje',                parte en que defino:  lo que dice si la foto
+ //                                                                   no carga
 
    
         {imagen: '../assets/viajes/viajes-1.jpg',
