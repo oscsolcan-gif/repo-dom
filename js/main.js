@@ -20,50 +20,50 @@ const arrayBanner = [
            
         {imagen: '../assets/banner/1.jpg',
            titulo: "banner 1",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "Un sol bajo que se pone detrás de montañas oscuras, con el agua en calma y dos boyas",
+           alt: 'Atardecer sobre el agua en calma, con el sol entre montañas oscuras',
            },
 
         {imagen: '../assets/banner/2.jpg',
            titulo: "banner 2",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "Muchos globos aerostáticos de colores sobre un cielo azul con nubes grandes",
+           alt: 'Globos aerostáticos de colores en un cielo azul con grandes nubes blancas',
            },
 
         {imagen: '../assets/banner/3.jpg',
            titulo: "banner 3",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "Cielo con estelas de aviones, nubes grises y un resplandor naranja abajo",
+           alt: 'Cielo de atardecer con estelas de aviones y un resplandor naranja',
            },
 
         {imagen: '../assets/banner/4.jpg',
            titulo: "banner 4",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "Globos sobre un campo de trigo dorado, con un árbol al fondo",
+           alt: 'Globos aerostáticos sobre un campo de trigo dorado bajo un cielo azul',
           },
           
         {imagen: '../assets/banner/5.jpg',
            titulo: "banner 5",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "La luna llena asomando entre nubes oscuras con reflejos anaranjados",
+           alt: 'Luna llena entre nubes oscuras con reflejos anaranjados',
            },
 
         {imagen: '../assets/banner/6.jpg',
            titulo: "banner 6",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "Montañas nevadas y glaciares bajo un cielo azul muy intenso",
+           alt: 'Panorámica de montañas nevadas y glaciares bajo un cielo azul',
            },
 
         {imagen: '../assets/banner/7.jpg',
            titulo: "banner 7",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "Una bandada enorme de pájaros a contraluz sobre un atardecer naranja y un mar de nubes",
+           alt: 'Bandada de pájaros a contraluz en un atardecer naranja sobre las nubes',
            },
 
         {imagen: '../assets/banner/8.jpg',
            titulo: "banner 8",
-           descripcion: "Descripcion de este banner",
-           alt: 'el alt de este banner',
+           descripcion: "Brotes blancos y peludos sobre una rama oscura, con fondo negro (parecen yemas de sauce)",
+           alt: 'Brotes blancos y peludos sobre una rama oscura y fondo negro',
           },
 ]
 
@@ -135,6 +135,16 @@ function pintarBanner(){
 // en el html //
 
 // meto la url del src y el alt aqui... miarlo//
+
+function pintarBanner() {
+  const imagen = document.querySelector('paginaViajes');  // 1. la img del header
+  const posicion = Math.floor(Math.random() *8);          // 2. al azar, de 0 a la última
+  const caja = arrayBanner[imagen];                          // 3. la caja de esa posición
+  posicion.setAttribute('alt', caja.imagen);         // 4. la ruta de la foto
+  ___.setAttribute('alt', caja.___);                      // 5. el texto alternativo
+}
+
+pintarBanner();                                           // llamar a la función
 
 
 
