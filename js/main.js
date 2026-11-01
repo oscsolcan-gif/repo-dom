@@ -149,8 +149,26 @@ pintarBanner();                                           // llamar a la funció
 
 function pintarDestinos() {
   const dest = document.querySelector('#destinos');
-  const pos = 
 
+    arrayDestinos.forEach(function (destino) 
+    
+    {        // array y nombre de la caja
 
+        const tarjeta = document.createElement('div');
+        const foto = document.createElement('img');
+        const texto = document.createElement('p');
 
+       foto.setAttribute('src',destino.picture);              // como en el banner
+       foto.setAttribute('alt',destino.alt);
+       texto.textContent = destino.descripcion;                    // como el título en la obra
+
+       tarjeta.append(foto);
+       tarjeta.append(texto);
+       dest.append(tarjeta);
+    }  );
 }
+
+pintarDestinos();                               // sin esto no hace nada
+
+
+
